@@ -56,6 +56,7 @@ bool Sea::addShip(Ship ship)
 {
 	bool flag = true;//flag变量标识添加船只是否成功
 	while (true) {
+		flag = true;
 		int alignment = rand() % 2;//随机船的方向 0 代表横向，1代表纵向
 		int xStart = rand() % (SEAWIDTH - ship.size + 1);//随机船起始的位置
 		int yStart = rand() % (SEALENGTH - ship.size + 1);//随机船起始的位置
